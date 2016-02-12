@@ -109,9 +109,10 @@
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <connections>
                                                     <action selector="didPressSignin:" destination="DpW-n6-trQ" eventType="touchUpInside" id="cHb-oc-FYR"/>
+                                                    <segue destination="nYs-ak-JWO" kind="modal" identifier="tutorialSegue" id="Qk7-0u-Gd1"/>
                                                 </connections>
                                             </button>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="VEb-QR-bPA">
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" id="VEb-QR-bPA">
                                                 <rect key="frame" x="245" y="110" width="20" height="20"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             </activityIndicatorView>
@@ -139,7 +140,7 @@
                                                 <rect key="frame" x="21" y="122" width="269" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                             </textField>
                                         </subviews>
                                     </view>
@@ -165,6 +166,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXi-kl-DTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1082" y="251"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gCT-gc-2jU">
+            <objects>
+                <viewController id="nYs-ak-JWO" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="v4i-eB-d0O">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome1" id="Gta-DX-OsG">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tXC-yf-fPT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1453" y="246"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HjC-Wo-d4e">
@@ -197,5 +218,6 @@
         <image name="login_text" width="320" height="70"/>
         <image name="sign_in_buttons" width="320" height="104"/>
         <image name="sign_in_nav_bar" width="320" height="66"/>
+        <image name="welcome1" width="320" height="568"/>
     </resources>
 </document>

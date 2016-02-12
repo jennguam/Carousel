@@ -30,7 +30,7 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
         buttonInitialY = buttonParentView.frame.origin.y
-        buttonOffset = -120
+        buttonOffset = -100
         
     }
     
@@ -78,7 +78,52 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     }
     
     @IBAction func didPressSignin(sender: AnyObject) {
-        
+        signinIndicator.stopAnimating()
+        signinButton.selected = true
+        if emailField.text!.isEmpty {
+            let emailAlertController = UIAlertController(title: "Email Required", message: "Please enter your email address", preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                // handle response here.
+            }
+            emailAlertController.addAction(OKAction)
+            self.presentViewController(emailAlertController, animated: true){
+                
+            }
+        } else if passwordField.text!.isEmpty {
+            let passAlertController = UIAlertController(title: "Password Required", message: "Please enter your password", preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: .Default) { (action) in
+                // handle response here.
+            }
+            passAlertController.addAction(OKAction)
+            self.presentViewController(passAlertController, animated: true){
+                
+            }
+            
+        } else {
+            signinIndicator.startAnimating()
+        }
+        if emailField.text == "a@a.com" && passwordField.text == "asdf" {
+            delay(2, closure: { () -> () in
+                // Stop animating the activity indicator.
+                self.signinIndicator.stopAnimating()
+                // Set the button state back to default, "Not Selected".
+                self.signinButton.selected = false
+                // perform the Segue to the next screen.
+                self.performSegueWithIdentifier("tutorialSegue", sender: nil)
+            })
+        } else {
+            self.signinIndicator.stopAnimating()
+            self.signinButton.selected = false
+             let loginAlertController = UIAlertController(title: "Authentication Failed", message: "Please try again", preferredStyle: .Alert)
+            let RetryAction = UIAlertAction(title: "Retry", style: .Default) { (action) in
+                // handle response here.
+            }
+            loginAlertController.addAction(RetryAction)
+            self.presentViewController(loginAlertController, animated: true){
+                
+            }
+
+        }
     }
     func scrollViewDidScroll(scrollView: UIScrollView) {
         print("scroll")
