@@ -41,7 +41,7 @@
                                         <rect key="frame" x="17" y="1000" width="285" height="49"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
-                                            <segue destination="DpW-n6-trQ" kind="push" id="zZB-VD-Cmb"/>
+                                            <segue destination="DpW-n6-trQ" kind="push" animates="NO" id="zZB-VD-Cmb"/>
                                         </connections>
                                     </button>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile3" id="Cj8-Ne-fXt">
@@ -79,7 +79,7 @@
         <!--Login View Controller-->
         <scene sceneID="znr-kP-EGf">
             <objects>
-                <viewController id="DpW-n6-trQ" customClass="LoginViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="flipHorizontal" id="DpW-n6-trQ" customClass="LoginViewController" customModule="Carousel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6pd-Cp-BZS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -107,6 +107,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RIS-jt-6M1" userLabel="sign in UIButton">
                                                 <rect key="frame" x="21" y="95" width="277" height="49"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="didPressSignin:" destination="DpW-n6-trQ" eventType="touchUpInside" id="cHb-oc-FYR"/>
+                                                </connections>
                                             </button>
                                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="VEb-QR-bPA">
                                                 <rect key="frame" x="245" y="110" width="20" height="20"/>
@@ -130,7 +133,7 @@
                                                 <rect key="frame" x="21" y="170" width="269" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="pMd-LH-xYu">
                                                 <rect key="frame" x="21" y="122" width="269" height="30"/>
@@ -150,7 +153,13 @@
                     <size key="freeformSize" width="320" height="568"/>
                     <connections>
                         <outlet property="buttonParentView" destination="6Rz-8R-Ytm" id="Zvx-fg-eED"/>
+                        <outlet property="emailField" destination="pMd-LH-xYu" id="O5o-yD-gzj"/>
+                        <outlet property="fieldParentView" destination="ykb-G1-pIf" id="5f8-Rk-dVb"/>
+                        <outlet property="loginNavBar" destination="Bht-2Z-I81" id="HWk-EW-VCn"/>
+                        <outlet property="passwordField" destination="u1C-YI-KBi" id="jjB-bW-dZT"/>
                         <outlet property="scrollView" destination="kd8-qS-XyW" id="t1h-lP-haV"/>
+                        <outlet property="signinButton" destination="RIS-jt-6M1" id="OKM-gf-mfE"/>
+                        <outlet property="signinIndicator" destination="VEb-QR-bPA" id="O4Q-hm-q19"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JXi-kl-DTd" userLabel="First Responder" sceneMemberID="firstResponder"/>
