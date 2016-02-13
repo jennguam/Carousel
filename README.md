@@ -1,14 +1,17 @@
 # Carousel
 
+How many hours did it take to complete? 
+
+Which required and optional stories have you completed?
 
 Project Requirements
 
-**Static photo tiles on the initial screen**  
-**Sign In**  
-**Tutorial Screens**  
-**Image Timeline**  
-**Conversations**  
-**Settings**  
+* Static photo tiles on the initial screen  
+* Sign In  
+* Tutorial Screens   
+* Image Timeline    
+* Conversations    
+* Settings    
 
 Optionals
 
