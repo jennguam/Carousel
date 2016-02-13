@@ -5,9 +5,7 @@ Project Requirements
 
 **Static photo tiles on the initial screen**  
 **Sign In**  
-**Tutorial Screens**
-* **Optional: User can page between the screens with updated dots**  
-* **Optional: Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button**  
+**Tutorial Screens**  
 **Image Timeline**  
 **Conversations**  
 **Settings**  
@@ -16,7 +14,9 @@ Optionals
 
 * **Optional: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.**
 * **Optional: On appear, scale the form up and fade it in.**
-* 
+* **Optional: User can page between the screens with updated dots**  
+* **Optional: Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button**  
+
 * Not Done Yet - Optional: Photo tiles move with scrolling
 * Not Done Yet - Optional: Create a Dropbox
 * Not Done Yet Optional: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
