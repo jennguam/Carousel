@@ -3,14 +3,16 @@
 
 Project Requirements
 
-* **Static photo tiles on the initial screen** 
-* **Sign In**
-* **Tutorial Screens**
-* **Image Timeline**
-* **Conversations**
-* **Settings**
+**Static photo tiles on the initial screen**  
+**Sign In**  
+**Tutorial Screens**
+* **Optional: User can page between the screens with updated dots**  
+* **Optional: Upon reaching the 4th page, hide the dots and show the "Take Carousel for a Spin" button**  
+**Image Timeline**  
+**Conversations**  
+**Settings**  
 
-**Optional**
+Optionals
 
 * **Optional: When the keyboard is visible, if the user pulls down on the scrollview, it will dismiss the keyboard.**
 * **Optional: On appear, scale the form up and fade it in.**
