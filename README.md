@@ -3,7 +3,7 @@
 
 Project Requirements
 
-* **Static photo tiles on the initial screen** *
+* **Static photo tiles on the initial screen** 
 * **Sign In**
 * **Tutorial Screens**
 * **Image Timeline**
