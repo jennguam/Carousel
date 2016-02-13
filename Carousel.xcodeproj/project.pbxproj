@@ -14,6 +14,8 @@
 		AE90CF1E1C6ED7670034D4BB /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90CF1D1C6ED7670034D4BB /* TimelineViewController.swift */; };
 		AE90CF201C6EDDC10034D4BB /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90CF1F1C6EDDC10034D4BB /* ConversationsViewController.swift */; };
 		AE90CF221C6EDEF50034D4BB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90CF211C6EDEF50034D4BB /* SettingsViewController.swift */; };
+		AE90CF241C6EF0550034D4BB /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90CF231C6EF0540034D4BB /* CreateAccountViewController.swift */; };
+		AE90CF261C6F00300034D4BB /* TermsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE90CF251C6F00300034D4BB /* TermsViewController.swift */; };
 		AEB1800A1C6C3232002D7230 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB180091C6C3232002D7230 /* AppDelegate.swift */; };
 		AEB1800C1C6C3232002D7230 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEB1800B1C6C3232002D7230 /* ViewController.swift */; };
 		AEB1800F1C6C3232002D7230 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEB1800D1C6C3232002D7230 /* Main.storyboard */; };
@@ -29,6 +31,8 @@
 		AE90CF1D1C6ED7670034D4BB /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		AE90CF1F1C6EDDC10034D4BB /* ConversationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationsViewController.swift; sourceTree = "<group>"; };
 		AE90CF211C6EDEF50034D4BB /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		AE90CF231C6EF0540034D4BB /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CreateAccountViewController.swift; path = ../CreateAccountViewController.swift; sourceTree = "<group>"; };
+		AE90CF251C6F00300034D4BB /* TermsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsViewController.swift; sourceTree = "<group>"; };
 		AEB180061C6C3232002D7230 /* Carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carousel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEB180091C6C3232002D7230 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEB1800B1C6C3232002D7230 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -52,6 +56,8 @@
 		AE90CF161C6C6E5A0034D4BB /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				AE90CF251C6F00300034D4BB /* TermsViewController.swift */,
+				AE90CF231C6EF0540034D4BB /* CreateAccountViewController.swift */,
 				AE90CF211C6EDEF50034D4BB /* SettingsViewController.swift */,
 				AE90CF1F1C6EDDC10034D4BB /* ConversationsViewController.swift */,
 				AE90CF1D1C6ED7670034D4BB /* TimelineViewController.swift */,
@@ -165,6 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE90CF261C6F00300034D4BB /* TermsViewController.swift in Sources */,
+				AE90CF241C6EF0550034D4BB /* CreateAccountViewController.swift in Sources */,
 				AE90CF181C6C73210034D4BB /* Common.swift in Sources */,
 				AE90CF151C6C6E530034D4BB /* IntroViewController.swift in Sources */,
 				AEB1800C1C6C3232002D7230 /* ViewController.swift in Sources */,

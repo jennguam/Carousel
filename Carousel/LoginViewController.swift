@@ -77,6 +77,9 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         scrollViewDidScroll(scrollView)
     }
     
+    @IBAction func onBack(sender: AnyObject) {
+        self.navigationController!.popToRootViewControllerAnimated(true)
+    }
     @IBAction func didPressSignin(sender: AnyObject) {
         signinIndicator.stopAnimating()
         signinButton.selected = true

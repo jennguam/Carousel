@@ -23,13 +23,13 @@ class IntroViewController: UIViewController {
         super.viewDidLoad()
         scrollView.contentSize = introPage.image!.size
         //print(scrollView.contentSize)
-        purpleMountains.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(15 * M_PI / 180))
-        dogTile.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(-15 * M_PI / 180))
-        fishTile.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(15 * M_PI / 180))
-        peopleTile.transform =  CGAffineTransformMakeRotation(CGFloat(15 * M_PI / 180))
-        mountainTile.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(-15 * M_PI / 180))
-       
-        deerTile.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(15 * M_PI / 180))
+//        purpleMountains.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(15 * M_PI / 180))
+//        dogTile.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(-15 * M_PI / 180))
+//        fishTile.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(15 * M_PI / 180))
+//        peopleTile.transform =  CGAffineTransformMakeRotation(CGFloat(15 * M_PI / 180))
+//        mountainTile.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(-15 * M_PI / 180))
+//       
+//        deerTile.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(15 * M_PI / 180))
        
         // Do any additional setup after loading the view.
     }
