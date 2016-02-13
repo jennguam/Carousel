@@ -22,7 +22,7 @@ class IntroViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.contentSize = introPage.image!.size
-        print(scrollView.contentSize)
+        //print(scrollView.contentSize)
         purpleMountains.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(15 * M_PI / 180))
         dogTile.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(-15 * M_PI / 180))
         fishTile.transform = CGAffineTransformRotate(CGAffineTransformMakeScale(1.7, 1.7), CGFloat(15 * M_PI / 180))
