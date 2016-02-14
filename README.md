@@ -25,13 +25,4 @@ Optional: Create a Dropbox
 * Optional: User is taken to the tutorial screens upon tapping the "Create a Dropbox" button.
 * Optional: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
 
-**Not Done Yet**
-
-* Not Done Yet - Optional: Photo tiles move with scrolling
-Not Done Yet - Optional: Learn more about Carousel
-* Not Done Yet - Optional: Show the "Learn more about Carousel" button in the photo timeline.
-* Not Done Yet - Optional: Tap the X to dismiss the banner
-Not Done Yet - Optional: Track the 3 events:
-** Not Done Yet - View a photo full screen, Swipe left and right, Share a photo
-Not Done Yet Optional: Upon completion of the events, mark them green.
-Not Done Yet Optional: When all events are completed, dismiss the banner.
+![alt tag](https://raw.github.com/jennguam/Carousel/master/Carousel_Walkthrough.gif)
