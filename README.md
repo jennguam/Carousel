@@ -1,6 +1,6 @@
 # Carousel
 
-How many hours did it take to complete? 
+How many hours did it take to complete? 11
 
 Which required and optional stories have you completed?
 
