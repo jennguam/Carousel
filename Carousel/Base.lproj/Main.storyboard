@@ -95,10 +95,6 @@
                                 <rect key="frame" x="0.0" y="-2" width="320" height="570"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="create_nav" id="LgL-uO-IWR">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_form" id="vBi-Az-9DG">
                                         <rect key="frame" x="0.0" y="154" width="320" height="113"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -131,10 +127,6 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="create_text" id="Cj9-2P-9bh">
-                                        <rect key="frame" x="0.0" y="74" width="320" height="63"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="terms_text" id="bMH-nU-Kjg">
                                         <rect key="frame" x="10" y="352" width="310" height="33"/>
                                         <autoresizingMask key="autoresizingMask"/>
@@ -153,6 +145,21 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <connections>
                                             <segue destination="hMx-rI-4ZT" kind="modal" id="uv1-w1-zTe"/>
+                                        </connections>
+                                    </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="create_text" id="Cj9-2P-9bh">
+                                        <rect key="frame" x="0.0" y="74" width="320" height="63"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="create_nav" id="LgL-uO-IWR">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="66"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="BIC-ro-eSD" userLabel="backButton">
+                                        <rect key="frame" x="0.0" y="21" width="55" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="onBack:" destination="ExM-k1-pzn" eventType="touchUpInside" id="utn-bU-Odh"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -178,6 +185,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="BIC-ro-eSD" id="J04-tV-aIq"/>
                         <outlet property="buttonParentView" destination="Kmh-SU-4sS" id="4VR-ZL-mpp"/>
                         <outlet property="checkBoxButton" destination="smZ-qR-Eih" id="CfL-bR-cAF"/>
                         <outlet property="createAcctButton" destination="Djs-dr-DZn" id="uV2-J9-odU"/>
@@ -255,32 +263,6 @@
                                 <rect key="frame" x="0.0" y="74" width="320" height="494"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" id="ykb-G1-pIf" userLabel="fieldParentView">
-                                        <rect key="frame" x="0.0" y="0.0" width="320" height="218"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_text" id="afP-Ta-9Qc">
-                                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_form" id="LI7-jB-HO7">
-                                                <rect key="frame" x="0.0" y="97" width="320" height="113"/>
-                                                <autoresizingMask key="autoresizingMask"/>
-                                            </imageView>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="u1C-YI-KBi">
-                                                <rect key="frame" x="21" y="170" width="269" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                                            </textField>
-                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="pMd-LH-xYu">
-                                                <rect key="frame" x="21" y="122" width="269" height="30"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
-                                            </textField>
-                                        </subviews>
-                                    </view>
                                     <view contentMode="scaleToFill" id="6Rz-8R-Ytm" userLabel="buttonParentView">
                                         <rect key="frame" x="0.0" y="226" width="320" height="268"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -303,6 +285,35 @@
                                             </activityIndicatorView>
                                         </subviews>
                                     </view>
+                                    <view contentMode="scaleToFill" id="ykb-G1-pIf" userLabel="fieldParentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="218"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_text" id="afP-Ta-9Qc">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="login_form" id="LI7-jB-HO7">
+                                                <rect key="frame" x="0.0" y="97" width="320" height="113"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                            </imageView>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" id="pMd-LH-xYu">
+                                                <rect key="frame" x="21" y="122" width="269" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
+                                            </textField>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" id="kSF-EZ-WfR">
+                                                <rect key="frame" x="21" y="160" width="282" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                <connections>
+                                                    <action selector="onPassword:" destination="DpW-n6-trQ" eventType="touchUpInside" id="5tD-ME-oqt"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </view>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -316,7 +327,7 @@
                         <outlet property="emailField" destination="pMd-LH-xYu" id="O5o-yD-gzj"/>
                         <outlet property="fieldParentView" destination="ykb-G1-pIf" id="5f8-Rk-dVb"/>
                         <outlet property="loginNavBar" destination="Bht-2Z-I81" id="HWk-EW-VCn"/>
-                        <outlet property="passwordField" destination="u1C-YI-KBi" id="jjB-bW-dZT"/>
+                        <outlet property="passwordField" destination="kSF-EZ-WfR" id="CEG-ms-KSB"/>
                         <outlet property="scrollView" destination="kd8-qS-XyW" id="t1h-lP-haV"/>
                         <outlet property="signinButton" destination="RIS-jt-6M1" id="OKM-gf-mfE"/>
                         <outlet property="signinIndicator" destination="VEb-QR-bPA" id="O4Q-hm-q19"/>

@@ -18,6 +18,7 @@ class CreateAccountViewController: UIViewController, UIScrollViewDelegate{
     @IBOutlet weak var lastNameField: UITextField!
     @IBOutlet weak var buttonParentView: UIView!
     @IBOutlet weak var checkBoxButton: UIButton!
+    @IBOutlet var backButton: UIButton!
     
     var buttonInitialY: CGFloat!
     var buttonOffset: CGFloat!
@@ -26,11 +27,11 @@ class CreateAccountViewController: UIViewController, UIScrollViewDelegate{
         super.viewDidLoad()
         scrollView.delegate = self
         scrollView.contentSize = scrollView.frame.size
-        scrollView.contentInset.bottom = 100
+        scrollView.contentInset.bottom = 130
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillShow:", name: UIKeyboardWillShowNotification, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "keyboardWillHide:", name: UIKeyboardWillHideNotification, object: nil)
         buttonInitialY = buttonParentView.frame.origin.y
-        buttonOffset = -300
+        buttonOffset = -230
         
 
     }
@@ -49,6 +50,9 @@ class CreateAccountViewController: UIViewController, UIScrollViewDelegate{
         print(scrollView.contentOffset.y)
     }
     
+    @IBAction func onBack(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     func keyboardWillHide(notification: NSNotification) {
         // Move the buttons back down to it's original position
         buttonParentView.frame.origin.y = buttonInitialY
@@ -56,7 +60,6 @@ class CreateAccountViewController: UIViewController, UIScrollViewDelegate{
     }
     
     func scrollViewDidScroll(scrollView: UIScrollView) {
-        print("scroll")
         // If the scrollView has been scrolled down by 50px or more...
         
         if scrollView.contentOffset.y <= -20 {

@@ -18,7 +18,8 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var emailField: UITextField!
     @IBOutlet weak var signinIndicator: UIActivityIndicatorView!
     @IBOutlet weak var signinButton: UIButton!
-    @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet var passwordField: UITextField!
+    
     
     
     
@@ -45,6 +46,9 @@ class LoginViewController: UIViewController, UIScrollViewDelegate {
         fieldParentView.alpha = 0
     }
     
+    @IBAction func onPassword(sender: AnyObject) {
+        print("inside pass")
+    }
     override func viewDidAppear(animated: Bool) {
         //Animate the code within over 0.3 seconds...
         UIView.animateWithDuration(0.3) { () -> Void in
