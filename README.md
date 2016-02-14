@@ -23,11 +23,11 @@ Optional: Create a Dropbox
 * Optional: Tapping the Agree to Terms checkbox selects the checkbox.
 * Optional: Tapping on Terms shows a webview with the terms.
 * Optional: User is taken to the tutorial screens upon tapping the "Create a Dropbox" button.
+* Optional: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
 
 **Not Done Yet**
 
 * Not Done Yet - Optional: Photo tiles move with scrolling
-* Not Done Yet Optional: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
 Not Done Yet - Optional: Learn more about Carousel
 * Not Done Yet - Optional: Show the "Learn more about Carousel" button in the photo timeline.
 * Not Done Yet - Optional: Tap the X to dismiss the banner
