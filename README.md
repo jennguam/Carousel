@@ -25,4 +25,4 @@ Optional: Create a Dropbox
 * Optional: User is taken to the tutorial screens upon tapping the "Create a Dropbox" button.
 * Optional: Tapping in the form reveals the keyboard and shifts the scrollview and "Create a Dropbox" button up.
 
-![alt tag](https://raw.github.com/jennguam/Carousel/master/Carousel_Walkthrough.gif)
+![](https://github.com/jennguam/Carousel/blob/master/Carousel_Walkthrough.gif)
